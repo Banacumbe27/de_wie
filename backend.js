@@ -6,9 +6,10 @@ async function fetch_data(){
 }
 async function load_vocab(force=false){
     let saved_data=JSON.parse(localStorage.getItem("de_wie"));
-    const deltaTime_min=(new Date()-new Date(saved_data.date))/60000;
+    let deltaTime_min=null;
+    if(saved_data){deltaTime_min=(new Date()-new Date(saved_data.date))/60000;}
     const timeout=10;
-    if(!saved_data || deltaTime_min>timeout || force){
+    if(!saved_data || deltaTime_min && deltaTime_min>timeout || force){
         saved_data={
             date:new Date(),
             vocab:""

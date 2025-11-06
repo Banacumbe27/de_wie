@@ -20,3 +20,7 @@ async function load_vocab(force=false){
     }
     return saved_data.vocab;
 }
+
+function randomPull(array){
+    return array[Math.floor(Math.random()*array.length)]
+}

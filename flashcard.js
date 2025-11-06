@@ -53,9 +53,7 @@ flashcard.textContent=""
 
 }
 
-function randomPull(array){
-    return array[Math.floor(Math.random()*array.length)]
-}
+
 let vocab_data;
 load_vocab().then(result=>{vocab_data=result
 current=randomPull(vocab_data);

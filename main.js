@@ -5,6 +5,7 @@ load_vocab().then(result=>{
 //front-end reactive
 const subpages={
     "Flashcards - Duy":"./flashcard.html",
+    "Gender Guessing - Duy":"./genderguessing.html",
 }
 function load_subpages(subpages){
 const mode_select=document.querySelector('.subpage-select');
@@ -14,7 +15,6 @@ const mode_select=document.querySelector('.subpage-select');
     button.classList.add("subpage-button");
     button.textContent=label;
     const linker=document.createElement("a");
-    linker.target="_blank";
     linker.href=subpages[label];
     linker.appendChild(button);
     mode_select.appendChild(linker);

@@ -75,6 +75,7 @@ transform:translateX(0vh);
     cursor:pointer;
     user-select: none;
     box-shadow: 0 0 1vmax 2px black;
+    width:fit-content;
 
 }
 .cover{

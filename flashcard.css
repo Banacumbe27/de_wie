@@ -18,8 +18,8 @@
     background:salmon;
     border-radius: 2vmax;
     box-shadow: 0 0 1vmax 2px black;
-    width:50vmax;
-    height:30vmax;
+    width:80vw;
+    min-height:30vmax;
     font-size:5vmax;
     color:white;
     font-family: Arial, Helvetica, sans-serif;

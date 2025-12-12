@@ -6,6 +6,7 @@ load_vocab().then(result=>{
 const subpages={
     "Flashcards - Duy":"./flashcard.html",
     "Gender Guessing - Duy":"./genderguessing.html",
+    "Dictionary - Duy":"./dictionary.html"
 }
 function load_subpages(subpages){
 const mode_select=document.querySelector('.subpage-select');

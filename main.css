@@ -43,6 +43,7 @@
     width:80vw;
     gap:5vmax;
     animation: 3s fade-in forwards;
+    overflow-y:scroll;
 }
 .subpage-select a{
 
